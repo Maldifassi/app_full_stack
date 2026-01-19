@@ -1,0 +1,7 @@
+<input [(ngModel)]="title">
+<button (click)="add()">Aggiungi</button>
+<ul>
+  <li *ngFor="let t of tasks">
+    {{t.title}} <button (click)="del(t.id)">X</button>
+  </li>
+</ul>
